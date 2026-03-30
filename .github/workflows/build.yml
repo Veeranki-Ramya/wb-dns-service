@@ -1,0 +1,13 @@
+on:
+  workflow_call:
+
+jobs:
+  compile:
+    name: compile
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+
+      - name: creating application
+        run: echo "this is the java application" > sample.txt
