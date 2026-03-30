@@ -1,0 +1,9 @@
+on:
+  workflow_call:
+jobs:
+  dev_deploy:
+   name: deployingg
+   runs-on: ubuntu-latest
+   steps:
+      - name: deploying application
+        run: echo "this is the deployed application" > deploy.txt
