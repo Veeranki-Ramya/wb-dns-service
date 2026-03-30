@@ -1,0 +1,13 @@
+name: dns-service Build and Deploy
+run-name: ${{github.run_number}}
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci_cd:
+    name: main service
+    uses: ./.github/workflows/reusablework.yml
+    runs-on: ubuntu-latest
+  
