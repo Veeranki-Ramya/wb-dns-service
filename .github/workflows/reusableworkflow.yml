@@ -1,0 +1,7 @@
+on:
+  workflow_call: 
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+    name: build application
